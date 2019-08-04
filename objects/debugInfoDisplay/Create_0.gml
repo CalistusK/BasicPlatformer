@@ -1,4 +1,6 @@
 if debug_mode {
-	debugdraw = false;
+	debugDraw = true;
 	debugpState = "";
+	debugAnchorX = 5;
+	debugAnchorY = 0;
 }

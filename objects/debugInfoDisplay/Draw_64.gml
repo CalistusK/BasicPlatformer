@@ -1,16 +1,12 @@
-if (debug_mode && debugdraw) {
-	draw_set_colour(c_yellow);
-	draw_text(5, 0, "Debug Info:");
+if (debug_mode && debugDraw) {
+	debugInfoAdd(0, "Debug Info:");
+	debugInfoAdd(1, "pState: ", debugpState);
+	debugInfoAdd(2, "obj_player.hspeed: ", obj_player.hspeed);
+	debugInfoAdd(3, "obj_player.vspeed: ", obj_player.vspeed);
+	debugInfoAdd(4, "obj_player.x: ", obj_player.x);
+	debugInfoAdd(5, "obj_player.y: ", obj_player.y);	
 	
-	//Player horizontal speed
-	draw_text(5, 15, "obj_playerX: ");
-	draw_text(125, 15, obj_player.hspeed);
-	
-	//Player vertical speed
-	draw_text(5, 30, "obj_playerY: ");
-	draw_text(125, 30, obj_player.vspeed);
-	
-	//Player state
+	//Get player state
 	switch(obj_player.stateCurrent) {
 		case 0:
 			debugpState = "idle";
@@ -34,6 +30,4 @@ if (debug_mode && debugdraw) {
 			debugpState = "dash_high";
 			break;
 	}
-	draw_text(5, 45, "pState: ");
-	draw_text(125, 45, debugpState);
 }

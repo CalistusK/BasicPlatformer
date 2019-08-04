@@ -1,30 +1,59 @@
 if keyboard_check(vk_left)
-   {
-   hspeed = -5;
-   }
+{
+	if hspeed > -5
+	{
+		hspeed -= 1;
+	}
+}
 else
 if keyboard_check(vk_right)
+{
+   if hspeed < 5
    {
-   hspeed = 5;
+		hspeed += 1;
    }
+}
 else
 hspeed = 0;
-stateCurrent = pState.idle;
 
-if hspeed != 0 {
-	stateCurrent = pState.run;
+if keyboard_check_pressed(vk_space) and jumpMax > 0
+{
+	if !(vspeed <= -15)
+	{
+		vspeed = vspeed - 16;
+		stateCurrent = pState.jump;
+	}
+	else
+	gravity = 1;
+	vspeed += gravity
 }
 
-if vspeed > 0 {
+if hspeed != 0
+{
+	stateCurrent = pState.run;
+}
+else
+stateCurrent = pState.idle;
+
+if !(position_meeting(obj_player.x, obj_player.y + 33, obj_block))
+{
+	jumpMax = 0;
+}
+else
+jumpMax = 1;
+
+if vspeed > 0
+{
 	stateCurrent = pState.fall;
 }
 
-if vspeed < 0 {
+if vspeed < 0
+{
 	stateCurrent = pState.jump;
 }
 
-//Stop accelerating fall speed due to natural gravity
-if vspeed > gravityCap {
+if vspeed > gravityCap
+{
 	vspeed = gravityCap
 }
    

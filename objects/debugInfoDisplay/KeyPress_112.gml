@@ -1,3 +1,3 @@
 if debug_mode {
-	debugdraw = !debugdraw;
+	debugDraw = !debugDraw;
 }

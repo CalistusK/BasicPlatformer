@@ -2,7 +2,7 @@
     "id": "dafda345-9426-4429-81e7-2be61c387ee4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "playerStates",
+    "name": "controller_playerStates",
     "eventList": [
         {
             "id": "ef0fbb19-5a69-4ac6-b1df-5ac24a964e5f",

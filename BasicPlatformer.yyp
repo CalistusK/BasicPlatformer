@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "07a954c1-e167-4c5f-b053-c14769cf692d",
+            "Value": {
+                "id": "159ae792-6f2c-4ff1-b2e0-ae387ed42ee5",
+                "resourcePath": "scripts\\debugInfoAdd\\debugInfoAdd.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "215a11d4-e17d-4b49-8cb2-5b2bd4d9704b",
             "Value": {
                 "id": "1a5e5394-7416-4089-95fc-0a66797dd501",
@@ -79,6 +87,14 @@
             }
         },
         {
+            "Key": "384eb2cc-1ffa-48f1-ba03-8f7732502519",
+            "Value": {
+                "id": "0bdeca91-30c5-472c-a249-3f72ea8fe69a",
+                "resourcePath": "notes\\Debug Controls.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "5524c218-ddeb-4c18-a18d-b360dbe98ef7",
             "Value": {
                 "id": "e1c613d8-1975-4ca9-a732-909dbb9f5139",
@@ -91,6 +107,14 @@
             "Value": {
                 "id": "8d073309-5c1e-48d9-88be-72a3411df51f",
                 "resourcePath": "views\\6078fed1-e6db-4613-9e9e-1a8d5beada5d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "67435982-1490-4b12-bd27-313906fede5c",
+            "Value": {
+                "id": "08adf020-20a9-4ae2-b8a4-b319855484f4",
+                "resourcePath": "views\\67435982-1490-4b12-bd27-313906fede5c.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -210,7 +234,7 @@
             "Key": "dafda345-9426-4429-81e7-2be61c387ee4",
             "Value": {
                 "id": "6b8a166c-1cc5-4389-8610-c44c4b33393e",
-                "resourcePath": "objects\\playerStates\\playerStates.yy",
+                "resourcePath": "objects\\controller_playerStates\\controller_playerStates.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -248,7 +272,7 @@
         }
     ],
     "script_order": [
-        
+        "07a954c1-e167-4c5f-b053-c14769cf692d"
     ],
     "tutorial": ""
 }
