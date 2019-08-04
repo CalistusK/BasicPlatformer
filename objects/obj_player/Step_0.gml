@@ -18,9 +18,9 @@ hspeed = 0;
 
 if keyboard_check_pressed(vk_space) and jumpCount > 0
 {
-	if !(vspeed <= -15)
+	if !(vspeed <= -8)
 	{
-		vspeed = vspeed - 16;
+		vspeed = vspeed - 9;
 		stateCurrent = pState.jump;
 		jumpCount = 0;
 	}
