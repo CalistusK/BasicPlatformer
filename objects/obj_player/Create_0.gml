@@ -1,4 +1,4 @@
 gravity = 1;
 gravityCap = 19;
-jumpMax = 1;
+jumpCount = 1;
 stateCurrent = pState.idle;

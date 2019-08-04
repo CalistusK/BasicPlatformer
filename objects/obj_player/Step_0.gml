@@ -16,12 +16,13 @@ if keyboard_check(vk_right)
 else
 hspeed = 0;
 
-if keyboard_check_pressed(vk_space) and jumpMax > 0
+if keyboard_check_pressed(vk_space) and jumpCount > 0
 {
 	if !(vspeed <= -15)
 	{
 		vspeed = vspeed - 16;
 		stateCurrent = pState.jump;
+		jumpCount = 0;
 	}
 	else
 	gravity = 1;
@@ -35,12 +36,10 @@ if hspeed != 0
 else
 stateCurrent = pState.idle;
 
-if !(position_meeting(obj_player.x, obj_player.y + 33, obj_block))
+if !(place_free(obj_player.x, obj_player.y + 1)) && vspeed = 0
 {
-	jumpMax = 0;
+	jumpCount = 1;
 }
-else
-jumpMax = 1;
 
 if vspeed > 0
 {
