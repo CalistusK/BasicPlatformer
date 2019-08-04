@@ -3,4 +3,6 @@ if debug_mode {
 	debugpState = "";
 	debugAnchorX = 5;
 	debugAnchorY = 0;
+	debugInfoList = ds_list_create();
+	debugInfoListLen = 0;
 }

@@ -14,7 +14,10 @@ if keyboard_check(vk_right)
    }
 }
 else
-hspeed = 0;
+if hspeed != 0
+{
+	hspeed -= sign(hspeed);
+}
 
 if keyboard_check_pressed(vk_space) and jumpCount > 0
 {

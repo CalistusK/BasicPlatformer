@@ -1,4 +1,4 @@
-// H Collisions
+// Horizontal collision
 if (place_meeting(obj_player.x + hspeed, obj_player.y, obj_block)) 
 {
 	while (!place_meeting(obj_player.x + sign(hspeed), obj_player.y, obj_block)) 
@@ -9,7 +9,7 @@ if (place_meeting(obj_player.x + hspeed, obj_player.y, obj_block))
 }
 obj_player.x += hspeed;
 
-// v Collisions
+// Vertical collision
 if (place_meeting(obj_player.x, obj_player.y + vspeed, obj_block)) 
 {
 	while (!place_meeting(obj_player.x, obj_player.y + sign(vspeed), obj_block))
