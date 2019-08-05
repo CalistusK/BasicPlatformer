@@ -13,7 +13,10 @@ draw_set_colour(c_yellow);
 
 var labelPosX = mouse_x + debugInfoDisplay.debugMouseAnchorX;
 var labelPosY = mouse_y + debugInfoDisplay.debugMouseAnchorY - (debugMouseLine * 15);
+//var boxXright = labelPosX + (string_length(argument[0]) * 9)
+//if argument_count >= 2 boxXright += (string_length(argument[1]) * 9)
 
+//draw_rectangle(labelPosX, labelPosY + 15, boxXright + 5, labelPosY, false);
 draw_text(labelPosX, labelPosY, argument[0]);
 
 if argument_count < 2 return;
