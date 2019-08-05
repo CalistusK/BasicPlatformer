@@ -4,7 +4,9 @@
     "mvc": "1.1",
     "name": "67435982-1490-4b12-bd27-313906fede5c",
     "children": [
-        "07a954c1-e167-4c5f-b053-c14769cf692d"
+        "07a954c1-e167-4c5f-b053-c14769cf692d",
+        "b7b70f68-97be-40bc-a5c3-09645847b341",
+        "3f42ba43-9ca8-40aa-8975-aee54c9a89ec"
     ],
     "filterType": "GMScript",
     "folderName": "debug",

@@ -1,4 +1,6 @@
+/// @description Display variable values
 if (debug_mode && debugDraw) {
+	//Display list of variables and values
 	debugInfoAdd("Debug Info:");
 	debugInfoAdd("FPS: ", string(fps));
 	debugInfoAdd("pState: ", debugpState);
@@ -7,6 +9,21 @@ if (debug_mode && debugDraw) {
 	debugInfoAdd("obj_player.x: ", obj_player.x);
 	debugInfoAdd("obj_player.y: ", obj_player.y);
 	debugInfoAdd("jumpCount: ", obj_player.jumpCount);
+	debugInfoAdd("mouse_x: ", mouse_x);
+	debugInfoAdd("mouse_y: ", mouse_y);
+	
+	//Draw object info at mouse position
+	if debugMouseDraw
+	{
+		inst = instance_position(mouse_x, mouse_y, all);
+		if (inst != noone)
+		{
+			debugMouseAdd("Name: ", object_get_name(inst.object_index));
+			debugMouseAdd("bbox_top: ", inst.bbox_top);
+			debugMouseAdd("bbox_left: ", inst.bbox_left);
+			debugMouseAdd("bbox_right: ", inst.bbox_right);
+		}
+	}
 	
 	//Get player state
 	switch(obj_player.stateCurrent) {
