@@ -18,17 +18,12 @@ else
 
 draw_set_colour(c_yellow);
 
-labelPosX = mouse_x + debugInfoDisplay.debugMouseAnchorX;
-labelPosY = mouse_y + debugInfoDisplay.debugMouseAnchorY - (debugMouseLine * 15);
-boxXright = mouse_x + debugLongest + 5
-boxYleft = mouse_y - (ds_list_size(debugInfoDisplay.debugMouseList) * 15)
+debugLabelPosX = mouse_x + debugInfoDisplay.debugMouseAnchorX;
+debugLabelPosY = mouse_y + debugInfoDisplay.debugMouseAnchorY - (debugMouseLine * 15);
+debugBoxXright = mouse_x + debugLongest + 5
+debugBoxYleft = mouse_y - (ds_list_size(debugInfoDisplay.debugMouseList) * 15)
 
-if debugMouseLine = 0
-{
-	draw_rectangle_colour(labelPosX, boxYleft, boxXright, mouse_y, c_blue, c_blue, c_blue, c_blue, false)
-}
-
-draw_text(labelPosX, labelPosY, argument[0]);
+draw_text(debugLabelPosX, debugLabelPosY, argument[0]);
 
 if argument_count < 2 return;
 

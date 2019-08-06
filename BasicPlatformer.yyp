@@ -199,14 +199,6 @@
             }
         },
         {
-            "Key": "9e9a938a-84dd-44ed-9004-cea47a79792f",
-            "Value": {
-                "id": "2ed117ed-0f4a-4e70-b59f-8270e0c46ccf",
-                "resourcePath": "scripts\\debugMouseBox\\debugMouseBox.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "a7cc881e-2e06-47df-aaad-80f8959aab73",
@@ -306,8 +298,7 @@
     "script_order": [
         "07a954c1-e167-4c5f-b053-c14769cf692d",
         "b7b70f68-97be-40bc-a5c3-09645847b341",
-        "3f42ba43-9ca8-40aa-8975-aee54c9a89ec",
-        "9e9a938a-84dd-44ed-9004-cea47a79792f"
+        "3f42ba43-9ca8-40aa-8975-aee54c9a89ec"
     ],
     "tutorial": ""
 }

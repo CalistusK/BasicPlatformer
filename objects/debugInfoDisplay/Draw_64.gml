@@ -18,6 +18,10 @@ if (debug_mode && debugDraw) {
 		inst = instance_position(mouse_x, mouse_y, all);
 		if (inst != noone)
 		{
+			if debugMouseLine = 0
+			{
+				draw_rectangle_colour(debugLabelPosX, debugBoxYleft, debugBoxXright, mouse_y, c_blue, c_blue, c_blue, c_blue, false)
+			}
 			debugMouseAdd("Name: ", object_get_name(inst.object_index));
 			debugMouseAdd("bbox_top: ", inst.bbox_top);
 			debugMouseAdd("bbox_left: ", inst.bbox_left);
