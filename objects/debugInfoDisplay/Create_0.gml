@@ -8,4 +8,5 @@ if debug_mode {
 	debugMouseAnchorY = -20;
 	debugInfoList = ds_list_create();
 	debugMouseList = ds_list_create();
+	debugLongest = "";
 }

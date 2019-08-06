@@ -1,7 +1,7 @@
 ///@param {str} debugMouseLabel		What the line should be labeled.
 ///@param debugMouseVar				(Optional) What variable should be displayed.
 
-var debugMouseLine = ds_list_find_index(debugInfoDisplay.debugMouseList, argument[0])
+debugMouseLine = ds_list_find_index(debugInfoDisplay.debugMouseList, argument[0])
 
 if debugMouseLine < 0
 {
@@ -9,14 +9,25 @@ if debugMouseLine < 0
 	debugMouseLine = ds_list_find_index(debugInfoDisplay.debugMouseList, argument[0])
 }
 
+if argument_count >= 2
+{
+	if string_width(argument[0] + string(argument[1])) > string_width(debugLongest) debugLongest = string_width(argument[0] + string(argument[1]))
+}
+else
+	if string_width(argument[0]) > string_width(debugLongest) debugLongest = string_width(argument[0])
+
 draw_set_colour(c_yellow);
 
-var labelPosX = mouse_x + debugInfoDisplay.debugMouseAnchorX;
-var labelPosY = mouse_y + debugInfoDisplay.debugMouseAnchorY - (debugMouseLine * 15);
-//var boxXright = labelPosX + (string_length(argument[0]) * 9)
-//if argument_count >= 2 boxXright += (string_length(argument[1]) * 9)
+labelPosX = mouse_x + debugInfoDisplay.debugMouseAnchorX;
+labelPosY = mouse_y + debugInfoDisplay.debugMouseAnchorY - (debugMouseLine * 15);
+boxXright = mouse_x + debugLongest + 5
+boxYleft = mouse_y - (ds_list_size(debugInfoDisplay.debugMouseList) * 15)
 
-//draw_rectangle(labelPosX, labelPosY + 15, boxXright + 5, labelPosY, false);
+if debugMouseLine = 0
+{
+	draw_rectangle_colour(labelPosX, boxYleft, boxXright, mouse_y, c_blue, c_blue, c_blue, c_blue, false)
+}
+
 draw_text(labelPosX, labelPosY, argument[0]);
 
 if argument_count < 2 return;
