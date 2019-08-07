@@ -1,62 +1,52 @@
-if keyboard_check(vk_left)
-{
-	if hspeed > -5
-	{
-		hspeed -= 1;
-	}
-}
-else
-if keyboard_check(vk_right)
-{
-   if hspeed < 5
-   {
-		hspeed += 1;
-   }
-}
-else
-if hspeed != 0
-{
-	hspeed -= sign(hspeed);
-}
+//Get inputs (1 = pressed, 0 = not pressed)
+key_right = keyboard_check(vk_right);
+key_left = keyboard_check(vk_left);
+key_jump = keyboard_check(vk_space);
 
-if keyboard_check_pressed(vk_space) and jumpCount > 0
-{
-	if !(vspeed <= -8)
-	{
-		vspeed = vspeed - 9;
-		stateCurrent = pState.jump;
-		jumpCount = 0;
-	}
-	else
-	gravity = 1;
-	vspeed += gravity
-}
+xvel = (key_right - key_left) * runspeed;
 
-if hspeed != 0
-{
-	stateCurrent = pState.run;
-}
-else
-stateCurrent = pState.idle;
+yvel = yvel + grav;
 
-if !(place_free(obj_player.x, obj_player.y + 1)) && vspeed = 0
+if (place_meeting(x,y+1,obj_block))
 {
 	jumpCount = 1;
+	if (xvel = 0)
+	{
+		stateCurrent = pState.idle;
+	}
+	else
+	{
+		stateCurrent = pState.run;
+	}
 }
 
-if vspeed > 0
+if jumpCount > 0 and (key_jump)
 {
-	stateCurrent = pState.fall;
-}
-
-if vspeed < 0
-{
+    yvel = -gravityCap;
+	jumpCount--;
 	stateCurrent = pState.jump;
 }
 
-if vspeed > gravityCap
+var onepixel = sign(xvel)
+if (place_meeting(x+xvel,y,obj_block))
 {
-	vspeed = gravityCap
+    while (!place_meeting(x+onepixel,y,obj_block))
+    {
+        x = x + onepixel;
+    }
+    xvel = 0;
 }
+x = x + xvel;
+
+var onepixel = sign(yvel)
+if (place_meeting(x,y+yvel,obj_block))
+{
+    while (!place_meeting(x,y+onepixel,obj_block))
+    {
+        y = y + onepixel;
+    }
+    yvel = 0;
+}
+y = y + yvel;
    
 if (y > room_height) game_restart()

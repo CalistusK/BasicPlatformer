@@ -4,8 +4,8 @@ if (debug_mode && debugDraw) {
 	debugInfoAdd("Debug Info:");
 	debugInfoAdd("FPS: ", string(fps));
 	debugInfoAdd("pState: ", debugpState);
-	debugInfoAdd("obj_player.hspeed: ", obj_player.hspeed);
-	debugInfoAdd("obj_player.vspeed: ", obj_player.vspeed);
+	debugInfoAdd("obj_player.xvel: ", obj_player.xvel);
+	debugInfoAdd("obj_player.yvel: ", obj_player.yvel);
 	debugInfoAdd("obj_player.x: ", obj_player.x);
 	debugInfoAdd("obj_player.y: ", obj_player.y);
 	debugInfoAdd("jumpCount: ", obj_player.jumpCount);

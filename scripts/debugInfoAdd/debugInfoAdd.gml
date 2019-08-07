@@ -22,7 +22,7 @@ draw_text(labelPosX, labelPosY, argument[0]);
 
 if argument_count < 2 return;
 
-var varPosX = string_length(argument[0]) * 9;
+var varPosX = string_width(argument[0]);
 var varPosY = debugInfoDisplay.debugAnchorY + (debugInfoLine * 15);
 
 draw_text(varPosX, varPosY, argument[1]);
