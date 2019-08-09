@@ -3,5 +3,6 @@ xvel = 0
 yvel = 0
 runspeed = 5
 gravityCap = 5;
-jumpCount = 1;
+jumpBaseCount = 1;
+jumpCount = 0;
 stateCurrent = pState.idle;

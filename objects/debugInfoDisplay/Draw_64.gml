@@ -1,6 +1,7 @@
 /// @description Display variable values
 if (debug_mode && debugDraw) {
 	//Display list of variables and values
+	//Labels must be unique!!!
 	debugInfoAdd("Debug Info:");
 	debugInfoAdd("FPS: ", string(fps));
 	debugInfoAdd("pState: ", debugpState);
@@ -11,21 +12,24 @@ if (debug_mode && debugDraw) {
 	debugInfoAdd("jumpCount: ", obj_player.jumpCount);
 	debugInfoAdd("mouse_x: ", mouse_x);
 	debugInfoAdd("mouse_y: ", mouse_y);
-	
+
 	//Draw object info at mouse position
 	if debugMouseDraw
 	{
-		inst = instance_position(mouse_x, mouse_y, all);
-		if (inst != noone)
+		debugMouseDrawInst = instance_position(mouse_x, mouse_y, all);
+		if (debugMouseDrawInst != noone)
 		{
-			if debugMouseLine = 0
-			{
-				draw_rectangle_colour(debugLabelPosX, debugBoxYleft, debugBoxXright, mouse_y, c_blue, c_blue, c_blue, c_blue, false)
-			}
-			debugMouseAdd("Name: ", object_get_name(inst.object_index));
-			debugMouseAdd("bbox_top: ", inst.bbox_top);
-			debugMouseAdd("bbox_left: ", inst.bbox_left);
-			debugMouseAdd("bbox_right: ", inst.bbox_right);
+			//Labels must be unique!!!
+			debugMouseAdd("Obj Name: ", object_get_name(debugMouseDrawInst.object_index));
+			debugMouseAdd("bbox_top: ", debugMouseDrawInst.bbox_top);
+			debugMouseAdd("bbox_bottom: ", debugMouseDrawInst.bbox_bottom);
+			debugMouseAdd("bbox_left: ", debugMouseDrawInst.bbox_left);
+			debugMouseAdd("bbox_right: ", debugMouseDrawInst.bbox_right);
+		}
+		else
+		{
+			ds_list_clear(debugMouseList);
+			debugMouseLongest = 0;
 		}
 	}
 	

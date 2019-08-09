@@ -8,6 +8,4 @@ draw_set_colour(c_blue);
 	    draw_line(bbox_left, bbox_top, bbox_right, bbox_top);
 	    draw_line(bbox_right, bbox_top, bbox_right, bbox_bottom);
 	    draw_line(bbox_left, bbox_bottom, bbox_right, bbox_bottom);
-	    image_blend = c_white;
 	    }
-	draw_set_colour(c_white);

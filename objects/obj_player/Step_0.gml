@@ -1,7 +1,7 @@
 //Get inputs (1 = pressed, 0 = not pressed)
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
-key_jump = keyboard_check(vk_space);
+key_jump = keyboard_check_pressed(vk_space);
 
 xvel = (key_right - key_left) * runspeed;
 
@@ -9,7 +9,7 @@ yvel = yvel + grav;
 
 if (place_meeting(x,y+1,obj_block))
 {
-	jumpCount = 1;
+	jumpCount = jumpBaseCount;
 	if (xvel = 0)
 	{
 		stateCurrent = pState.idle;
