@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3084abbf-e00b-4909-bf0b-50ccb895eef2",
+            "Value": {
+                "id": "e199806c-debb-4c25-85db-3fa071617449",
+                "resourcePath": "objects\\obj_fireball\\obj_fireball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "384eb2cc-1ffa-48f1-ba03-8f7732502519",
             "Value": {
                 "id": "0bdeca91-30c5-472c-a249-3f72ea8fe69a",
@@ -111,11 +119,27 @@
             }
         },
         {
+            "Key": "513be2c6-9cb7-48b0-999e-5e80045260e9",
+            "Value": {
+                "id": "2777f00f-6903-4699-9e3e-b2cc7961577e",
+                "resourcePath": "scripts\\getCollision\\getCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5524c218-ddeb-4c18-a18d-b360dbe98ef7",
             "Value": {
                 "id": "e1c613d8-1975-4ca9-a732-909dbb9f5139",
                 "resourcePath": "views\\5524c218-ddeb-4c18-a18d-b360dbe98ef7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e565085-99b1-4fb6-bd99-846fb0a29470",
+            "Value": {
+                "id": "5a3b826e-0eb2-4dca-bf32-14a94125cc04",
+                "resourcePath": "sprites\\spr_fireball\\spr_fireball.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -274,7 +298,7 @@
             "Key": "dafda345-9426-4429-81e7-2be61c387ee4",
             "Value": {
                 "id": "6b8a166c-1cc5-4389-8610-c44c4b33393e",
-                "resourcePath": "objects\\controller_playerStates\\controller_playerStates.yy",
+                "resourcePath": "objects\\controller_player\\controller_player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -320,6 +344,7 @@
         }
     ],
     "script_order": [
+        "513be2c6-9cb7-48b0-999e-5e80045260e9",
         "07a954c1-e167-4c5f-b053-c14769cf692d",
         "b7b70f68-97be-40bc-a5c3-09645847b341",
         "3f42ba43-9ca8-40aa-8975-aee54c9a89ec"

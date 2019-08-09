@@ -7,7 +7,7 @@ xvel = (key_right - key_left) * runspeed;
 
 yvel = yvel + grav;
 
-if (place_meeting(x,y+1,obj_block))
+if (place_meeting(x,y+1,all))
 {
 	jumpCount = jumpBaseCount;
 	if (xvel = 0)
@@ -28,9 +28,9 @@ if jumpCount > 0 and (key_jump)
 }
 
 var onepixel = sign(xvel)
-if (place_meeting(x+xvel,y,obj_block))
+if (place_meeting(x+xvel,y,all))
 {
-    while (!place_meeting(x+onepixel,y,obj_block))
+    while (!place_meeting(x+onepixel,y,all))
     {
         x = x + onepixel;
     }
@@ -39,9 +39,9 @@ if (place_meeting(x+xvel,y,obj_block))
 x = x + xvel;
 
 var onepixel = sign(yvel)
-if (place_meeting(x,y+yvel,obj_block))
+if (place_meeting(x,y+yvel,all))
 {
-    while (!place_meeting(x,y+onepixel,obj_block))
+    while (!place_meeting(x,y+onepixel,all))
     {
         y = y + onepixel;
     }

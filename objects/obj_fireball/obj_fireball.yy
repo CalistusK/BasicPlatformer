@@ -1,19 +1,10 @@
 {
-    "id": "dafda345-9426-4429-81e7-2be61c387ee4",
+    "id": "3084abbf-e00b-4909-bf0b-50ccb895eef2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "controller_playerStates",
+    "name": "obj_fireball",
     "eventList": [
-        {
-            "id": "ef0fbb19-5a69-4ac6-b1df-5ac24a964e5f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "dafda345-9426-4429-81e7-2be61c387ee4"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "5e565085-99b1-4fb6-bd99-846fb0a29470",
     "visible": true
 }
