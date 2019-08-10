@@ -7,15 +7,3 @@ enum pState {
 	dash_mid, //5
 	dash_high //6
 };
-
-enum collisionType {
-	none, //Do nothing
-	block //Regular ground
-}
-
-collisionID = "";
-
-//Block-type collision
-collisionBlock = ds_list_create();
-ds_list_add(collisionBlock, "obj_block");
-ds_list_add(collisionBlock, "enemyShelledNewt");

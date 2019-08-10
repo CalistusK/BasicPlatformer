@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "513be2c6-9cb7-48b0-999e-5e80045260e9",
-            "Value": {
-                "id": "2777f00f-6903-4699-9e3e-b2cc7961577e",
-                "resourcePath": "scripts\\getCollision\\getCollision.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "5524c218-ddeb-4c18-a18d-b360dbe98ef7",
             "Value": {
                 "id": "e1c613d8-1975-4ca9-a732-909dbb9f5139",
@@ -344,7 +336,6 @@
         }
     ],
     "script_order": [
-        "513be2c6-9cb7-48b0-999e-5e80045260e9",
         "07a954c1-e167-4c5f-b053-c14769cf692d",
         "b7b70f68-97be-40bc-a5c3-09645847b341",
         "3f42ba43-9ca8-40aa-8975-aee54c9a89ec"
