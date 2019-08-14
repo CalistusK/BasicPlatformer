@@ -30,7 +30,7 @@ if jumpCount > 0 and (key_jump)
 
 if (key_jump_rel)
 {
-	yvel = yvel/1.5
+	yvel = yvel/1.5;
 }
 
 var onepixel = sign(xvel)
