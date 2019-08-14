@@ -2,6 +2,7 @@
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
+key_jump_rel = keyboard_check_released(vk_space);
 
 xvel = (key_right - key_left) * runspeed;
 
@@ -25,6 +26,11 @@ if jumpCount > 0 and (key_jump)
     yvel = -gravityCap;
 	jumpCount--;
 	stateCurrent = pState.jump;
+}
+
+if (key_jump_rel)
+{
+	yvel = yvel/1.5
 }
 
 var onepixel = sign(xvel)
