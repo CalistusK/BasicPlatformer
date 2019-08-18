@@ -18,7 +18,8 @@ draw_set_colour(c_yellow);
 
 var labelPosX = debugAnchorX;
 var labelPosY = debugAnchorY + (debugInfoLine * customLineHeight);
-if labelPosY > debugInfoListLastY debugInfoListLastY = labelPosY;
+var lastY = labelPosY + customLineHeight;
+if lastY > debugInfoListLastY debugInfoListLastY = lastY;
 if labelPosX > debugInfoListMaxX debugInfoListMaxX = labelPosX;
 
 draw_text(labelPosX, labelPosY, argument[0]);
