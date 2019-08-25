@@ -13,28 +13,31 @@ if (debug_mode && debugDraw) {
 	debugInfoAdd("mouse_x: ", mouse_x);
 	debugInfoAdd("mouse_y: ", mouse_y);
 	debugInfoAdd("fireballs: ", instance_number(obj_fireball));
+}
 
-	//Draw object info at mouse position
-	if debugMouseDraw
+//Draw object info at mouse position
+if (debug_mode && debugMouseDraw)
+{
+	debugMouseDrawInst = instance_position(mouse_x, mouse_y, all);
+	if (debugMouseDrawInst != noone)
 	{
-		debugMouseDrawInst = instance_position(mouse_x, mouse_y, all);
-		if (debugMouseDrawInst != noone)
-		{
-			//Labels must be unique!!!
-			debugMouseAdd("Obj Name: ", object_get_name(debugMouseDrawInst.object_index));
-			debugMouseAdd("bbox_top: ", debugMouseDrawInst.bbox_top);
-			debugMouseAdd("bbox_bottom: ", debugMouseDrawInst.bbox_bottom);
-			debugMouseAdd("bbox_left: ", debugMouseDrawInst.bbox_left);
-			debugMouseAdd("bbox_right: ", debugMouseDrawInst.bbox_right);
-		}
-		else
-		{
-			ds_list_clear(debugMouseList);
-			debugMouseLongest = 0;
-		}
+		//Labels must be unique!!!
+		debugMouseAdd("Obj Name: ", object_get_name(debugMouseDrawInst.object_index));
+		debugMouseAdd("bbox_top: ", debugMouseDrawInst.bbox_top);
+		debugMouseAdd("bbox_bottom: ", debugMouseDrawInst.bbox_bottom);
+		debugMouseAdd("bbox_left: ", debugMouseDrawInst.bbox_left);
+		debugMouseAdd("bbox_right: ", debugMouseDrawInst.bbox_right);
 	}
-	
-	//Get player state
+	else
+	{
+		ds_list_clear(debugMouseList);
+		debugMouseLongest = 0;
+	}
+}
+
+//Get player state
+if (debug_mode)
+{
 	switch(obj_player.stateCurrent) {
 		case 0:
 			debugpState = "idle";

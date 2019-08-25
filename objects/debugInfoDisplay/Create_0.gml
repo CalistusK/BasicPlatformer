@@ -1,8 +1,13 @@
 //Keep in alphabetical order
 if debug_mode {
+	//bools
+	debugBBDraw = true;
+	debugDraw = true;
+	debugMouseDraw = true;
+	
+	//other stuff
 	debugAnchorX = 5;
 	debugAnchorY = 0;
-	debugDraw = true;
 	debugInfoList = ds_list_create();
 	debugInfoListLastY = 0;
 	debugInfoListMaxX = 0;
@@ -12,7 +17,6 @@ if debug_mode {
 	debugMouseAnchorY = -20;
 	debugMouseBoxXright = 0;
 	debugMouseBoxYleft = 0;
-	debugMouseDraw = true;
 	debugMouseDrawInst = 0;
 	debugMouseList = ds_list_create();
 	debugMouseLine = 0;

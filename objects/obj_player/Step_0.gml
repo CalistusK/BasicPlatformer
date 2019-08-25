@@ -54,5 +54,11 @@ if (place_meeting(x,y+yvel,all))
     yvel = 0;
 }
 y = y + yvel;
+
+//The most basic floor depenetration
+if (place_meeting(x,bbox_bottom,all))
+{
+	y -= 1;
+}
    
 if (y > room_height) game_restart()
