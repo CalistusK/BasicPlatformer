@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2c024099-a837-49fd-87b0-f01518d772db",
+            "Value": {
+                "id": "1d7cb4cd-77f7-41a5-8f20-399afbc4528a",
+                "resourcePath": "scripts\\pStateSet\\pStateSet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2ed6ca4d-3cd6-4dd3-b0f3-b43b8c873c11",
             "Value": {
                 "id": "340ee367-f9cf-4a64-a905-ba7cb2867aac",
@@ -116,6 +124,14 @@
                 "id": "58e11146-fdb3-48dd-8fcf-0ee370898f9c",
                 "resourcePath": "scripts\\debugMouseAdd\\debugMouseAdd.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4d0e0219-8b6d-4731-ae5c-1fdf26713b7a",
+            "Value": {
+                "id": "a9e527b6-1e25-490d-85de-844c9c1958c0",
+                "resourcePath": "views\\4d0e0219-8b6d-4731-ae5c-1fdf26713b7a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -298,7 +314,7 @@
             "Key": "dafda345-9426-4429-81e7-2be61c387ee4",
             "Value": {
                 "id": "6b8a166c-1cc5-4389-8610-c44c4b33393e",
-                "resourcePath": "objects\\controller_player\\controller_player.yy",
+                "resourcePath": "objects\\player\\player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -346,7 +362,8 @@
     "script_order": [
         "07a954c1-e167-4c5f-b053-c14769cf692d",
         "b7b70f68-97be-40bc-a5c3-09645847b341",
-        "3f42ba43-9ca8-40aa-8975-aee54c9a89ec"
+        "3f42ba43-9ca8-40aa-8975-aee54c9a89ec",
+        "2c024099-a837-49fd-87b0-f01518d772db"
     ],
     "tutorial": ""
 }

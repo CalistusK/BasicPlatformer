@@ -10,14 +10,13 @@ yvel = yvel + grav;
 
 if (place_meeting(x,y+1,all))
 {
-	jumpCount = jumpBaseCount;
-	if (xvel = 0)
+	if (xvel == 0)
 	{
-		stateCurrent = pState.idle;
+		pStateSet(pState.idle);
 	}
 	else
 	{
-		stateCurrent = pState.run;
+		pStateSet(pState.run);
 	}
 }
 
@@ -25,7 +24,7 @@ if jumpCount > 0 and (key_jump)
 {
     yvel = -gravityCap;
 	jumpCount--;
-	stateCurrent = pState.jump;
+	pStateSet(pState.jump);
 }
 
 if (key_jump_rel)

@@ -1,2 +1,3 @@
 Esc: Exit game.
 F1: Toggle Debug Info display.
+F2: Go to next room.

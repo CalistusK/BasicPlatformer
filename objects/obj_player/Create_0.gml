@@ -6,3 +6,4 @@ gravityCap = 5;
 jumpBaseCount = 2;
 jumpCount = 0;
 stateCurrent = pState.idle;
+stateLast = pState.idle;
