@@ -1,1 +1,0 @@
-///@description Get current state
