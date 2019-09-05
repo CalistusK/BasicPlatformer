@@ -3,8 +3,9 @@ key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
 key_jump_rel = keyboard_check_released(vk_space);
+key_dash = keyboard_check_pressed(vk_lshift);
 
-xvel = (key_right - key_left) * runspeed;
+if (!(stateCurrent = pState.dash)) xvel = (key_right - key_left) * runspeed;
 
 yvel = yvel + grav;
 
@@ -19,6 +20,20 @@ if (place_meeting(x,y+1,all))
 		pStateSet(pState.run);
 	}
 }
+
+if (key_dash && !(stateCurrent = pState.dash))
+{
+	pStateSet(pState.dash);
+	xvel *= 2;
+}
+
+if (abs(xvel) > runspeed)
+{
+	//wanna ease/tween here, not whatever this is!
+	xvel -= sign(xvel) * power(abs(xvel), -0.5);
+}
+
+if ((abs(xvel) > runspeed) && (abs(xvel) < runspeed + 0.1)) xvel = runspeed;
 
 if jumpCount > 0 and (key_jump)
 {

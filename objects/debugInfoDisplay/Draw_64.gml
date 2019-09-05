@@ -52,13 +52,7 @@ if (debug_mode)
 			debugpState = "fall";
 			break;
 		case 4:
-			debugpState = "dash_low";
-			break;
-		case 5:
-			debugpState = "dash_mid";
-			break;
-		case 6:
-			debugpState = "dash_high";
+			debugpState = "dash";
 			break;
 	}
 }
