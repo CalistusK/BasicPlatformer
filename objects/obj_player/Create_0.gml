@@ -6,3 +6,4 @@ gravityCap = 5;
 jumpBaseCount = 2;
 jumpCount = 0;
 stateCurrent = pState.idle;
+timerDash = 0.5 * 60; //seconds * 60

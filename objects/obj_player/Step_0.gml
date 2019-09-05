@@ -5,24 +5,15 @@ key_jump = keyboard_check_pressed(vk_space);
 key_jump_rel = keyboard_check_released(vk_space);
 key_dash = keyboard_check_pressed(vk_lshift);
 
+if (alarm[0] == -1) pStateUpdate();
+
 if (!(stateCurrent = pState.dash)) xvel = (key_right - key_left) * runspeed;
 
 yvel = yvel + grav;
 
-if (place_meeting(x,y+1,all))
-{
-	if (xvel == 0)
-	{
-		pStateSet(pState.idle);
-	}
-	else
-	{
-		pStateSet(pState.run);
-	}
-}
-
 if (key_dash && !(stateCurrent = pState.dash))
 {
+	alarm[0] = timerDash;
 	pStateSet(pState.dash);
 	xvel *= 2;
 }
