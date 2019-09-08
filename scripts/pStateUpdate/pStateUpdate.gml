@@ -12,3 +12,9 @@ if (place_meeting(obj_player.x,obj_player.y+1,all))
 		pStateSet(pState.run);
 	}
 }
+
+if ( (!place_meeting(obj_player.x,obj_player.y+1,all))
+	&& (floor(yvel) >= 0) )
+{
+	pStateSet(pState.fall);
+}

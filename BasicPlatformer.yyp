@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "95fd1fae-e5f3-49ba-b0e2-24f50ce8f890",
+            "Value": {
+                "id": "de213030-f935-409f-abce-946058598ce2",
+                "resourcePath": "scripts\\debugStateGet\\debugStateGet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "97d5a0fe-8de8-4384-b5c8-705aeccced5e",
             "Value": {
                 "id": "d7f4ca3b-25ab-4585-9b6c-7748280970ee",
@@ -371,6 +379,7 @@
         "07a954c1-e167-4c5f-b053-c14769cf692d",
         "b7b70f68-97be-40bc-a5c3-09645847b341",
         "3f42ba43-9ca8-40aa-8975-aee54c9a89ec",
+        "95fd1fae-e5f3-49ba-b0e2-24f50ce8f890",
         "2c024099-a837-49fd-87b0-f01518d772db",
         "6f1d5feb-ed04-4a5c-868f-61f8c162c069"
     ],

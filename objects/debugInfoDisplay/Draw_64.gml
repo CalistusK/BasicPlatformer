@@ -4,12 +4,15 @@ if (debug_mode && debugDraw) {
 	//Labels must be unique!!!
 	debugInfoAdd("Debug Info:");
 	debugInfoAdd("FPS: ", string(fps));
-	debugInfoAdd("pState: ", debugpState);
+	debugInfoAdd("pState: ", debugStateGet(obj_player.stateCurrent) );
+	debugInfoAdd("stateLast: ", debugStateGet(obj_player.stateLast) );
+	debugInfoAdd("pFacing: ", obj_player.pFacing);
 	debugInfoAdd("obj_player.xvel: ", obj_player.xvel);
 	debugInfoAdd("obj_player.yvel: ", obj_player.yvel);
 	debugInfoAdd("obj_player.x: ", obj_player.x);
 	debugInfoAdd("obj_player.y: ", obj_player.y);
 	debugInfoAdd("jumpCount: ", obj_player.jumpCount);
+	debugInfoAdd("dashCount: ", obj_player.dashCount);
 	debugInfoAdd("mouse_x: ", mouse_x);
 	debugInfoAdd("mouse_y: ", mouse_y);
 	debugInfoAdd("fireballs: ", instance_number(obj_fireball));
@@ -32,27 +35,5 @@ if (debug_mode && debugMouseDraw)
 	{
 		ds_list_clear(debugMouseList);
 		debugMouseLongest = 0;
-	}
-}
-
-//Get player state
-if (debug_mode)
-{
-	switch(obj_player.stateCurrent) {
-		case 0:
-			debugpState = "idle";
-			break;
-		case 1:
-			debugpState = "run";
-			break;
-		case 2:
-			debugpState = "jump";
-			break;
-		case 3:
-			debugpState = "fall";
-			break;
-		case 4:
-			debugpState = "dash";
-			break;
 	}
 }
