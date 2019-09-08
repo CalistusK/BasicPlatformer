@@ -5,13 +5,14 @@ key_jump = keyboard_check_pressed(vk_space);
 key_jump_rel = keyboard_check_released(vk_space);
 key_dash = keyboard_check_pressed(vk_lshift);
 
-if (alarm[0] == -1) pStateUpdate();
+pGrounded = place_meeting(obj_player.x,obj_player.y+1,all);
+pWallTouch = ( place_meeting(obj_player.x + 1,obj_player.y,all)
+			|| place_meeting(obj_player.x - 1,obj_player.y,all) )
+if (pWallTouch) pLeftRight = true;
 
-if ( !(stateCurrent = pState.dash)
-	&& !(stateCurrent = pState.jump && stateLast = pState.dash) )
-{
-	xvel = (key_right - key_left) * runspeed;
-}
+if (alarm[0] == -1 || pWallTouch) pStateUpdate();
+
+if (pLeftRight) xvel = (key_right - key_left) * runspeed;
 
 if ( sign(xvel) != 0 ) pFacing = sign(xvel);
 image_xscale = pFacing;
@@ -47,7 +48,7 @@ if ( (abs(xvel) > runspeed)
 	&& (!(stateCurrent = pState.dash))
 	&& (!(stateCurrent = pState.jump)) )
 {
-	//wanna ease/tween here, not whatever this is!
+	//fix it fix it fix it
 	xvel -= sign(xvel) * power(abs(xvel), -0.5);
 }
 

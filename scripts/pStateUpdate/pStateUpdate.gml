@@ -1,7 +1,8 @@
 ///@description Update state based on player variables
 ///@param {int} state
 
-if (place_meeting(obj_player.x,obj_player.y+1,all))
+//when standing on something
+if (obj_player.pGrounded)
 {
 	if (obj_player.xvel == 0)
 	{
@@ -13,8 +14,16 @@ if (place_meeting(obj_player.x,obj_player.y+1,all))
 	}
 }
 
-if ( (!place_meeting(obj_player.x,obj_player.y+1,all))
+//when not standing on something
+if ( !obj_player.pGrounded
 	&& (floor(yvel) >= 0) )
 {
 	pStateSet(pState.fall);
+}
+
+if (obj_player.stateCurrent = pState.jump
+	&& obj_player.stateLast == pState.dash
+	&& obj_player.xvel == 0)
+{
+	pLeftRight = true;
 }

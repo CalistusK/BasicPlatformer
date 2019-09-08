@@ -7,6 +7,7 @@ if (debug_mode && debugDraw) {
 	debugInfoAdd("pState: ", debugStateGet(obj_player.stateCurrent) );
 	debugInfoAdd("stateLast: ", debugStateGet(obj_player.stateLast) );
 	debugInfoAdd("pFacing: ", obj_player.pFacing);
+	debugInfoAdd("pGrounded: ", obj_player.pGrounded);
 	debugInfoAdd("obj_player.xvel: ", obj_player.xvel);
 	debugInfoAdd("obj_player.yvel: ", obj_player.yvel);
 	debugInfoAdd("obj_player.x: ", obj_player.x);

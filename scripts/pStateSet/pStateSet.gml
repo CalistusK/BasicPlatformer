@@ -11,12 +11,15 @@ switch(argument[0])
 	case 1: //run
 		obj_player.jumpCount = obj_player.jumpBaseCount;
 		obj_player.dashCount = obj_player.dashBaseCount;
+		obj_player.pLeftRight = true;
 		break;
 	case 2: //jump
 		break;
 	case 3: //fall
+		obj_player.pLeftRight = true;
 		break;
 	case 4: //dash
+		if !(obj_player.pWallTouch) pLeftRight = false;
 		break;
 }
 

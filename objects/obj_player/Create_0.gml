@@ -8,6 +8,7 @@ jumpCount = 0;
 dashBaseCount = 1;
 dashCount = 0;
 pFacing = 1;
+pLeftRight = true;
 stateCurrent = pState.idle;
 stateLast = pState.idle;
 timerDash = 0.2 * 60; //seconds * 60
