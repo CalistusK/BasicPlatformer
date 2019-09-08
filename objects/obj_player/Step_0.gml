@@ -14,6 +14,7 @@ if ( !(stateCurrent = pState.dash)
 }
 
 if ( sign(xvel) != 0 ) pFacing = sign(xvel);
+image_xscale = pFacing;
 
 switch ( stateCurrent )
 {
