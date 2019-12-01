@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "34bb8dd3-b292-4500-92d1-d772e888febf",
+            "Value": {
+                "id": "db82d561-3afd-4f5a-9083-8c3fcfae55d2",
+                "resourcePath": "objects\\debugConsole\\debugConsole.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "384eb2cc-1ffa-48f1-ba03-8f7732502519",
             "Value": {
                 "id": "0bdeca91-30c5-472c-a249-3f72ea8fe69a",
@@ -123,6 +131,14 @@
             "Value": {
                 "id": "58e11146-fdb3-48dd-8fcf-0ee370898f9c",
                 "resourcePath": "scripts\\debugMouseAdd\\debugMouseAdd.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "43549f0d-ff00-41c1-872c-3f1f92c459bf",
+            "Value": {
+                "id": "f51b5486-35ab-4d8d-a3f5-db50359c86c7",
+                "resourcePath": "scripts\\debugConsoleParse\\debugConsoleParse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -327,6 +343,14 @@
             }
         },
         {
+            "Key": "d944db13-4ddf-446f-9ae9-7cb4221137b5",
+            "Value": {
+                "id": "6558f041-4ab6-4a25-ba2c-6d8b575dea71",
+                "resourcePath": "scripts\\debugConsoleDrawText\\debugConsoleDrawText.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dafda345-9426-4429-81e7-2be61c387ee4",
             "Value": {
                 "id": "6b8a166c-1cc5-4389-8610-c44c4b33393e",
@@ -348,6 +372,14 @@
                 "id": "2efd620a-21bf-453c-bc99-b07225f9e372",
                 "resourcePath": "objects\\enemyShelledNewt\\enemyShelledNewt.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e7eda49b-93e3-4a88-aea3-a0488366d026",
+            "Value": {
+                "id": "0a5916bd-f5bb-45fe-8444-689860f5b140",
+                "resourcePath": "scripts\\debugConsoleAutocomplete\\debugConsoleAutocomplete.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -380,6 +412,9 @@
         "b7b70f68-97be-40bc-a5c3-09645847b341",
         "3f42ba43-9ca8-40aa-8975-aee54c9a89ec",
         "95fd1fae-e5f3-49ba-b0e2-24f50ce8f890",
+        "e7eda49b-93e3-4a88-aea3-a0488366d026",
+        "d944db13-4ddf-446f-9ae9-7cb4221137b5",
+        "43549f0d-ff00-41c1-872c-3f1f92c459bf",
         "2c024099-a837-49fd-87b0-f01518d772db",
         "6f1d5feb-ed04-4a5c-868f-61f8c162c069"
     ],
