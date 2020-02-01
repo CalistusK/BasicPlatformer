@@ -1,5 +1,4 @@
 //bools
-dConEnabled = false;
 if (debug_mode) dConEnabled = true;
 dConDraw = false;
 

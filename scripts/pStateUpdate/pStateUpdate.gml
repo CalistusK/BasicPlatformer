@@ -21,7 +21,9 @@ if ( !obj_player.pGrounded
 	pStateSet(pState.fall);
 }
 
-if (obj_player.stateCurrent = pState.jump && obj_player.xvel == 0)
+if (obj_player.stateCurrent = pState.jump
+	&& obj_player.stateLast == pState.dash
+	&& obj_player.xvel == 0)
 {
 	pLeftRight = true;
 }

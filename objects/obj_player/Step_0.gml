@@ -2,6 +2,7 @@ key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
 key_jump_rel = keyboard_check_released(vk_space);
+key_dash = keyboard_check_pressed(vk_lshift);
 
 pGrounded = place_meeting(obj_player.x,obj_player.y+1,all);
 
@@ -20,9 +21,37 @@ image_xscale = pFacing;
 
 switch ( stateCurrent )
 {
+	case pState.dash:
+		yvel = 0;
+		break;
 	default:
 		yvel = yvel + grav;
 		break;
+}
+
+if ( (dashCount > 0)
+	&& (key_dash)
+	&& !(stateCurrent = pState.dash) )
+{
+	--dashCount;
+	alarm[0] = timerDash;
+	pStateSet(pState.dash);
+	if ( (xvel == 0) )
+	{
+		xvel = sign(pFacing) * 10;
+	}
+	else
+	{
+		xvel *= 2;
+	}
+}
+
+if ( (abs(xvel) > runspeed)
+	&& (!(stateCurrent = pState.dash))
+	&& (!(stateCurrent = pState.jump)) )
+{
+	//fix it fix it fix it
+	xvel -= sign(xvel) * power(abs(xvel), -0.5);
 }
 
 if ( (abs(xvel) > runspeed - 0.1)

@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3084abbf-e00b-4909-bf0b-50ccb895eef2",
+            "Value": {
+                "id": "e199806c-debb-4c25-85db-3fa071617449",
+                "resourcePath": "objects\\obj_fireball\\obj_fireball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "34bb8dd3-b292-4500-92d1-d772e888febf",
             "Value": {
                 "id": "db82d561-3afd-4f5a-9083-8c3fcfae55d2",
@@ -151,11 +159,27 @@
             }
         },
         {
+            "Key": "5e565085-99b1-4fb6-bd99-846fb0a29470",
+            "Value": {
+                "id": "5a3b826e-0eb2-4dca-bf32-14a94125cc04",
+                "resourcePath": "sprites\\spr_fireball\\spr_fireball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6078fed1-e6db-4613-9e9e-1a8d5beada5d",
             "Value": {
                 "id": "8d073309-5c1e-48d9-88be-72a3411df51f",
                 "resourcePath": "views\\6078fed1-e6db-4613-9e9e-1a8d5beada5d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "625235b6-a62b-4ebe-a334-bf54de6a01b7",
+            "Value": {
+                "id": "d7a84e96-b51d-4f95-ae7a-c173b33432f8",
+                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -231,6 +255,14 @@
             }
         },
         {
+            "Key": "93d488f1-daba-4181-9391-53f27c07b866",
+            "Value": {
+                "id": "bd6e73ae-9832-4944-8263-d38cb7afd4e4",
+                "resourcePath": "objects\\enemy\\enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "95fd1fae-e5f3-49ba-b0e2-24f50ce8f890",
             "Value": {
                 "id": "de213030-f935-409f-abce-946058598ce2",
@@ -244,6 +276,14 @@
                 "id": "d7f4ca3b-25ab-4585-9b6c-7748280970ee",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "9e2084f0-272a-4112-8eec-a80d37a06a0a",
+            "Value": {
+                "id": "a414c45e-140f-40a2-8da0-5303f359e94a",
+                "resourcePath": "sprites\\spr_ShelledNewt\\spr_ShelledNewt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -324,6 +364,14 @@
                 "id": "c9380796-8705-4c6f-818b-85386e6e4a29",
                 "resourcePath": "views\\de1e7fd9-13d8-44ef-ba9f-3ae5670bba07.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e1015da6-c6f6-40e5-897d-02ce36a8d9b2",
+            "Value": {
+                "id": "2efd620a-21bf-453c-bc99-b07225f9e372",
+                "resourcePath": "objects\\enemyShelledNewt\\enemyShelledNewt.yy",
+                "resourceType": "GMObject"
             }
         },
         {
