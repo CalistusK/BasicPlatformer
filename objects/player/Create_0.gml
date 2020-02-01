@@ -3,5 +3,4 @@ enum pState {
 	run, //1
 	jump, //2
 	fall, //3
-	dash, //4
 };

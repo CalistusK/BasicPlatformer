@@ -13,10 +13,8 @@ if (debug_mode && debugDraw) {
 	debugInfoAdd("obj_player.x: ", obj_player.x);
 	debugInfoAdd("obj_player.y: ", obj_player.y);
 	debugInfoAdd("jumpCount: ", obj_player.jumpCount);
-	debugInfoAdd("dashCount: ", obj_player.dashCount);
 	debugInfoAdd("mouse_x: ", mouse_x);
 	debugInfoAdd("mouse_y: ", mouse_y);
-	debugInfoAdd("fireballs: ", instance_number(obj_fireball));
 }
 
 //Draw object info at mouse position
